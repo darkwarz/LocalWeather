@@ -10,10 +10,10 @@ $(document).ready(function() {
             lat = position.coords.latitude;
             long = position.coords.longitude;
     
-            $.ajax({
-                method: "GET",
-                url: "https://api.openweathermap.org/data/2.5/weather",
-                data: { lat: lat, lon: long, units: "imperial", appid: APIKEY },
+            $.ajax({ // ajax call
+                method: "GET",  // get method 
+                url: "https://api.openweathermap.org/data/2.5/weather", // gets url
+                data: { lat: lat, lon: long, units: "imperial", appid: APIKEY }, // sets the data for long and latitude, also adds in api key from url
                 success: function weatherData(data) {
                     
                     $("#city").text(data.name);
@@ -22,7 +22,7 @@ $(document).ready(function() {
                     document.getElementById("temp").innerHTML = (data.main.temp) + " degrees F";
                     document.getElementById("wind").innerHTML = (data.wind.speed) + " MPH";
                     document.getElementById("icon").src = "https://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
-
+ 
                     $("#c").click(function() { // jQuery used to convert temp to C
                         
                         var f = data.main.temp;
