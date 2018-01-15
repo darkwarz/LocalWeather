@@ -11,32 +11,32 @@
 	<title>WeatherToday</title>
 </head>
 <body class="container-fluid image">
-	<div class="container-fluid text-center" id="display">
-		<h2 class="bold" id="title">L <i class="wi wi-hail"></i>calWeather</h2>
+	<div class="container-fluid text-center" id="display"> <!-- Container -->
+		<h2 class="bold" id="title">L <i class="wi wi-hail"></i>calWeather</h2> <!-- Title of weather -->
 		<div class="row">
-			<p class="info bold">City</p>
+			<p class="info bold">City</p> <!-- Location data -->
 			<div class="info2" id="city"></div>
-			<p class="info bold">Current Conditions</p>
+			<p class="info bold">Current Conditions</p> <!-- Current Conditions data -->
 			<div class="info2" id="current bold"></div><img id="icon" src="">
-			<p class="info bold">Temperature</p>
+			<p class="info bold">Temperature</p> <!-- temp data -->
 			<div class="info2" id="temp"></div>
-			<p class="info bold">Wind Speed</p>
+			<p class="info bold">Wind Speed</p><!-- MPH wind data -->
 			<div class="info2" id="wind"></div>
 		</div>
 		<div class="row">
 			<button class="btn bold" id="f">ºF</button> <button class="btn bold" id="Temp"><i aria-hidden="true" class="fa fa-thermometer-half fa-4"></i></button> <button class="btn bold" id="c">ºC</button>
 			<div class="credits btn btn-basic">
-				<i class="fa fa-github"></i> <a href="https://github.com/darkwarz">Author: Jabier Espinal</a>
-			</div>
-			<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js">
+				<i class="fa fa-github"></i> <a href="https://github.com/darkwarz">Author: Jabier Espinal</a> <!-- Signiture -->
+			</div> 
+			<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js"> // adds styling js
 			</script> 
-			<script src="cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+			<script src="cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"> // adds styling js
 			</script> 
-			<script src="https://code.jquery.com/jquery-3.2.1.min.js">
+			<script src="https://code.jquery.com/jquery-3.2.1.min.js"> // adds some styling JS 
 			</script> 
-			<script src="script.js">
+			<script src="script.js"> // links my Script code file to main html
 			</script> 
-			<script src="key.js">
+			<script src="key.js"> // Key File to make the api work
 			</script> 
 		</div>
 	</div>

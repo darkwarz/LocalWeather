@@ -19,9 +19,9 @@ $(document).ready(function() {
                     $("#city").text(data.name);
                     $("#current").text(data.weather[0].main);
                     
-                    document.getElementById("temp").innerHTML = (data.main.temp) + " degrees F";
-                    document.getElementById("wind").innerHTML = (data.wind.speed) + " MPH";
-                    document.getElementById("icon").src = "https://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
+                    document.getElementById("temp").innerHTML = (data.main.temp) + " degrees F"; // adds temp element to Temperature F
+                    document.getElementById("wind").innerHTML = (data.wind.speed) + " MPH"; // adds the wind MPH data from api
+                    document.getElementById("icon").src = "https://openweathermap.org/img/w/" + data.weather[0].icon + ".png"; // adds weather icons
  
                     $("#c").click(function() { // jQuery used to convert temp to C
                         
